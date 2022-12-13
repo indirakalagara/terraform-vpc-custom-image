@@ -10,24 +10,12 @@ variable "ibmcloud_api_key" {
   default     = ""
 }
 
-
-variable "base_name" {
+variable "resource_group" {
   type        = string
-  description = "Prefix name for all IBM Cloud resources"
+  description = "Resource group of IBM COS object "
   default     = ""
 }
 
-variable "zone" {
-  type        = string
-  description = "IBM Cloud resource deployment Zone in a Cloud Region"
-  default     = ""
-}
-
-variable "ssh_key" {
-  type        = string
-  description = "SSH key ID to inject into the virtual server instance"
-  default     = ""
-}
 
 variable "image_name" {
   type        = string
@@ -35,11 +23,7 @@ variable "image_name" {
   default     = ""
 }
 
-variable "vsi_profile" {
-  type        = string
-  description = "VS Instance size"
-  default     = ""
-}
+
 
 variable "os_name" {
   type        = string
@@ -73,8 +57,3 @@ variable "bucket_type" {
   default     = "region_location"
 }
 
-variable "resource_group" {
-  type        = string
-  description = "Resource group of IBM COS object "
-  default     = ""
-}

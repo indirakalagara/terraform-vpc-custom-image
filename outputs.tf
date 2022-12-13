@@ -9,3 +9,7 @@ output image_object_crn {
 output custom_image_crn {
   value = data.ibm_is_image.custom_image.crn
 } 
+
+output custom_image_id {
+  value = data.ibm_is_image.custom_image.id
+} 
